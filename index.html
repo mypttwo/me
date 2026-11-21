@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mypt — independent developer</title>
+<meta name="description" content="Mypt: an independent developer building small, simple apps with a lot of help from AI.">
+<link rel="icon" href="subbr.png">
+<style>
+  :root { --bg:#fbf8f3; --card:#fff; --text:#1d1a16; --muted:#6b645b; --line:#e9e2d7; --accent:#7c3aed; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#14121a; --card:#1d1a25; --text:#f2eef8; --muted:#a59fb3; --line:#2c2838; --accent:#a78bfa; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height:1.6; }
+  main { max-width: 40rem; margin: 0 auto; padding: 64px 22px 48px; }
+  .wave { font-size: 2.6rem; line-height: 1; }
+  h1 { font-size: 2.4rem; letter-spacing: -0.02em; margin: 14px 0 6px; }
+  .tag { color: var(--muted); font-size: 1.1rem; margin: 0 0 28px; }
+  p { margin: 0 0 16px; font-size: 1.05rem; }
+  h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin: 44px 0 14px; }
+  .apps { display: grid; gap: 14px; }
+  a.app { display: flex; align-items: center; gap: 18px; padding: 16px; border-radius: 20px;
+    background: var(--card); border: 1px solid var(--line); color: inherit; text-decoration: none;
+    transition: transform .15s ease, border-color .15s ease; }
+  a.app:hover { transform: translateY(-2px); border-color: var(--accent); }
+  a.app img { width: 72px; height: 72px; border-radius: 18px; flex: none; }
+  .app b { font-size: 1.2rem; display: block; }
+  .app span { color: var(--muted); font-size: 0.98rem; }
+  ul { padding-left: 1.2rem; margin: 0 0 16px; }
+  li { margin-bottom: 6px; }
+  footer { margin-top: 52px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.92rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <div class="wave" aria-hidden="true">👋</div>
+  <h1>Hi, I'm Mypt.</h1>
+  <p class="tag">Independent developer. Small apps. Big help from AI.</p>
+
+  <p>I build simple products with an AI as my co-worker. I bring the ideas and the stubbornness. The AI brings the typing, the patience, and the occasional strong opinion about semicolons.</p>
+  <p>It's a small team: one human, one AI, no meetings. Decisions are fast. Arguments are polite. The coffee budget is entirely mine.</p>
+
+  <h2>The rules I build by</h2>
+  <ul>
+    <li>Each app does one thing, and does it well.</li>
+    <li>Fewer taps beat more features.</li>
+    <li>If it needs a manual, it needs another try.</li>
+  </ul>
+
+  <h2>Things I've made</h2>
+  <div class="apps">
+    <a class="app" href="https://mypttwo.github.io/subbr/">
+      <img src="subbr.png" alt="subbr logo" width="72" height="72">
+      <div><b>subbr</b><span>Hide a message in plain sight. Send it through any chat app; only your friend can read it.</span></div>
+    </a>
+    <a class="app" href="https://mypttwo.github.io/two-faced/">
+      <img src="two-faced.png" alt="Two-Faced logo" width="72" height="72">
+      <div><b>Two-Faced</b><span>A party game of truces and betrayals. Make a deal, break it, and be the last one standing.</span></div>
+    </a>
+  </div>
+
+  <footer>
+    Made by a human, with help from an AI. Bugs are a team effort.<br>
+    Say hello on <a href="https://github.com/mypttwo">GitHub</a>.
+  </footer>
+</main>
+</body>
+</html>
