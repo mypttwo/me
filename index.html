@@ -30,6 +30,11 @@
   .app span { color: var(--muted); font-size: 0.98rem; }
   ul { padding-left: 1.2rem; margin: 0 0 16px; }
   li { margin-bottom: 6px; }
+  .hire { margin-top: 44px; padding: 20px 22px; border-radius: 20px; border: 1px dashed var(--accent);
+    background: color-mix(in srgb, var(--accent) 7%, var(--card)); }
+  .hire h2 { margin-top: 0; color: var(--accent); }
+  .hire p:last-child { margin-bottom: 0; }
+  .hire a { color: var(--accent); font-weight: 600; }
   footer { margin-top: 52px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.92rem; }
   footer a { color: var(--accent); }
 </style>
@@ -62,9 +67,14 @@
     </a>
   </div>
 
+  <section class="hire">
+    <h2>Available for work</h2>
+    <p>I'm open to building apps for other people too, in crypto and beyond. I have a solid background in both, so I can talk wallets and smart contracts as easily as buttons and screens.</p>
+    <p>I'm friendly, reliable, and I reply faster than a block confirms. Got a project in mind? <a href="https://github.com/mypttwo">Say hello on GitHub</a>.</p>
+  </section>
+
   <footer>
-    Made by a human, with help from an AI. Bugs are a team effort.<br>
-    Say hello on <a href="https://github.com/mypttwo">GitHub</a>.
+    Made by a human, with help from an AI. Bugs are a team effort.
   </footer>
 </main>
 </body>
